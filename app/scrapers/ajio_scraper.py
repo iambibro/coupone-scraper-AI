@@ -10,11 +10,11 @@ class AjioScraper(BaseScraper):
     """Scraper for Ajio website"""
     
     def __init__(self):
-        # super().__init__("https://www.ajio.com")
-        super().__init__("https://www.coupondunia.in/ajio")
+        super().__init__("https://www.ajio.com")
+        # super().__init__("https://www.coupondunia.in/ajio")
         # Adding an alternative URL that may contain coupons (offers page)
-        # self.offers_url = "https://www.ajio.com/help/offers"
-        self.offers_url = "https://www.coupondunia.in/ajio"
+        self.offers_url = "https://www.ajio.com/help/offers"
+        # self.offers_url = "https://www.coupondunia.in/ajio"
         
     def extract_coupons(self) -> List[Coupon]:
         """Extract coupons from Ajio website"""
