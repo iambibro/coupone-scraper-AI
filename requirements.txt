@@ -1,0 +1,17 @@
+fastapi==0.105.0
+uvicorn==0.24.0
+requests==2.31.0
+beautifulsoup4==4.12.2
+langchain==0.0.340
+langchain_openai==0.0.2
+python-dotenv==1.0.0
+httpx==0.25.1
+lxml==4.9.3
+nest-asyncio==1.5.8
+aiohttp==3.9.1
+fake-useragent==1.3.0
+pydantic==2.5.2
+openai>=1.6.1,<2.0.0
+# tiktoken==0.5.1  # CONFLICT: langchain_openai 0.0.2 requires tiktoken>=0.5.2,<0.6.0
+# Use tiktoken==0.5.2 to resolve the conflict
+rich==13.5.2
